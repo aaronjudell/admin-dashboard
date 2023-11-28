@@ -92,14 +92,23 @@ li {
     margin-top: 5px;
 }
 
+.searchbar-container {
+    grid-column: 2;
+}
+
 .search {
     height: 30px;
-    grid-column: 2;
+    width: 95%;
 }
 
 .search-icon {
     grid-column: 1;
     margin-left: 10px;
+}
+
+.searchbar-container, .search-icon {
+    display: flex;
+    align-items: center;
 }
 
 .user-info {
@@ -122,6 +131,11 @@ li {
     grid-column: 3;
 }
 
+.bell, .profile-pic-small, .name {
+    display: flex;
+    align-items: center;
+}
+
 .user-greeting {
     display: grid;
     grid-template-rows: 1fr;
@@ -129,12 +143,24 @@ li {
 }
 
 .profile-pic-big {
-    margin-top: 20px;
     grid-column: 1;
 }
 
 .greeting {
     grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-pic-big {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.greeting p {
+    margin: 0;
 }
 
 .buttons {
@@ -142,7 +168,8 @@ li {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.buttons button {
-    max-height: 100%;
-    max-width: 100%;
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
