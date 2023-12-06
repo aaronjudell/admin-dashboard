@@ -150,10 +150,21 @@ li {
 
 .bell {
     grid-column: 1;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .profile-pic-small {
     grid-column: 2;
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.profile-pic-small img {
+    height: 40px;
+    width: 40px;
 }
 
 .name {
@@ -168,12 +179,19 @@ li {
 .user-greeting {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 50px 1fr;
+    grid-template-columns: 80px 1fr;
     margin-left: 5px;
 }
 
 .profile-pic-big {
     grid-column: 1;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.profile-pic-big img {
+    height: 70px;
+    width: 70px;
 }
 
 .greeting {
@@ -204,6 +222,17 @@ li {
     justify-content: center;
 }
 
+button {
+    background-color: #0284c7;
+    border: none;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 15px;
+    color: white;
+}
+
 .projects {
     grid-row: 1 / span 2;
     grid-column: 1;
@@ -232,12 +261,14 @@ li {
     background-color: white;
     box-shadow: inset -2px -2px 0 0 #d1d5db;
     border-radius: 10px;
+    border-left: 5px solid #fbbf24;
 }
 
 .project-icons {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 4fr 1fr 1fr 1fr;
+    padding-bottom: 15px;
 }
 
 .announcements {
@@ -312,6 +343,11 @@ li {
     background-color: white;
 }
 
+.trend-container img {
+    height: 40px;
+    width: 40px;
+}
+
 .first-trend {
     border-radius: 10px 10px 0 0;
 }
@@ -327,6 +363,7 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-right: 10px;
 }
 
 .trending-profile {
